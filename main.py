@@ -81,6 +81,7 @@ def main():
         elif choice == "4":
             print("Checking active slots against current time...")
             check_routine_status(tasks)
+            save_data(tasks)
             print("Check complete.")
         elif choice == "5":
             generate_summary(tasks)

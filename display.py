@@ -28,7 +28,7 @@ def render_schedule(tasks):
         elif status == "IN_PROGRESS":
             status_text = f"{YELLOW}[IN PROGRESS]{RESET}"
         else:
-            status_text = f"[PENDING]"
+            status_text = "[PENDING]"
 
         time_slot = f"{t['start']} - {t['end']}"
         print(f"{t['id']:<4} {time_slot:<15} {t['title']:<20} {status_text}")
